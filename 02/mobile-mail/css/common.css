@@ -1,0 +1,15 @@
+html,body,div,span,h1,a,ul,li,nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;   /*元素的基线与父元素的基线对齐*/
+}
+body {
+	line-height: 1em;
+	background: #F4F4F4;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: lighter;
+}

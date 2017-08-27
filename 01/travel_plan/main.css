@@ -1,0 +1,160 @@
+.page {
+	width: 640px;
+	/*background-color: red;*/
+}
+header {
+	width: 100%;
+	height: 80px;
+	text-align: center;	
+	overflow: hidden;
+	background-color: #2bab79;
+}
+.container {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+
+	
+}
+.routeList {
+	border-bottom: 1px solid #e6e8ea;
+	background-color: #fff;
+	padding-left: 5px;
+
+
+}
+.routeList a {
+	display: block;
+	position: relative;
+
+}
+.routeList .pic {
+	display: block;
+	min-height: 150px;
+		
+}
+.routeList  .bottom {
+	position: absolute;
+	left: 4px;
+	right: 0;
+	bottom: 37px;
+	height: 50px;
+	padding: 30px 0 0 60px;
+	color: #fff;
+	overflow-y: hidden;
+	background-image: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.6));
+	background-image: linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.6));
+	
+
+}
+.routeList .bottom .face {
+	float: left;
+	margin-left: -50px;
+	width: 38px;
+	height: 38px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.routeList .bottom .face img {
+	display: block;
+	border-radius: 50%;
+}
+.routeList .bottom .title {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 22px;
+}
+.routeList .day {
+	position: absolute;
+	top: 10px;
+	right:20px;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(043,171,121,0.8);
+	border-radius: 50%;
+	text-align: center;
+	font-size: 18px;
+	line-height: 50px;
+	color: #fff;
+}
+.routeList .infos {
+	margin-top: 7px;
+
+}
+.routeList .infos>div {
+	margin-bottom: 5px;
+	padding-left: 40px;
+	/*background-color: red;	*/
+}
+.routeList .infos em {
+	float: left;
+	margin-left: -40px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.routeList .infos p {
+	max-height: 48px;
+	margin-left: 20px;
+	overflow: hidden;
+}
+.footer-basic {
+	width: 640px;
+	/*background-color: blue;*/
+	margin: 20px 0;
+	text-align: center;
+	font-size: 10px;
+	line-height: 20px;
+}
+.footer-basic .switchMedia {
+	color: #9ea3ab;
+}
+.footer-basic .switchMedia span	{
+	margin-left: 30px;
+}
+.footer-basic .switchMedia span a {
+	color: #444;
+	text-decoration: none;
+}
+.asides {
+	position: absolute;
+	left: -200px;
+	top: 0;
+	height: 400px;
+	width: 200px;
+
+}
+.aside {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 200px;
+	overflow-y: scroll;
+	background-color: #2d3741;
+}
+nav {
+	padding: 80px 10px 10px 10px;
+}
+nav li {
+	border-top: 1px solid #232d34;
+	background-color: #36424b;
+}
+nav a {
+	text-decoration: none;
+	display: block;
+	padding-left: 15px;
+	font-size: 16px;
+	line-height: 44px;
+	color: #ced1d5;
+}
+nav a:hover {
+	color: white;
+	background-color: #2bab79;
+}
+

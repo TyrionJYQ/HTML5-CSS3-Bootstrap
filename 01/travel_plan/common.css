@@ -1,0 +1,39 @@
+html {
+	height: 100%;
+	overflow-x: hidden;
+	background: #f5f5f5;
+	color: #444;
+	font: 14px/24px Helvetical !important;
+}
+body {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 0;
+	/*background-color: red;	*/
+	
+	max-width: 640px;
+	min-height: 100%;
+	margin: 0 auto;
+	overflow-x: hidden;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+div,ul,li,p {
+	margin: 0;
+	padding: 0;
+	outline: 0;  /*当元素获得焦点的时候，焦点框为0，不出现虚线框或者高亮框*/
+}
+em,strong {
+	font-style: normal;
+	font-weight: normal;
+}
+ul {
+	list-style: none;
+}
+h1 {
+	font-size: 55px;
+	margin-top: 30px;
+	color: white;
+	text-align: center;
+}
