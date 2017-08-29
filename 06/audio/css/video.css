@@ -1,0 +1,18 @@
+/*设置所有按钮样式*/
+button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: 0.5em 2em 0.55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+	background-color: #944bc8;
+	color: white;
+}
+/*设置鼠标悬停效果*/
+button:hover {
+	background-color: green;
+}

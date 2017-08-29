@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>HTML5视频播放器</title>
+    <link rel="stylesheet" type="text/css" href="css/video.css" />
+</head>
+<body >
+<center>
+	<video id="myVideo" >
+		<!-- 判断是否支持其播放器 -->
+		<source src="video/myVideo.ogg"  type="video/ogg" >
+		<source src="video/myVideo.webm" type="video/webm" autoplay>
+		<source src="video/myVideo.mp4" type="video/mp4" autoplay>
+		您的浏览器不支持video标签
+	</video>
+	<br/>
+	<button id="playPause" onclick="playPause();">播放</button>
+	<button onclick="goBack(5);">快进5S</button>
+	<button onclick="goBack(-5);">快退5S</button>
+	<button onclick="volume(0.1);">音量+</button>
+	<button onclick="volume(-0.1);">音量-</button>
+	<button id="isMuted" onclick="isMuted();">静音</button>
+</center>
+</body>
+<script type="text/javascript" src="js/video.js"></script>
+</html>
