@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 600px;
+    height: 420px;
+    position: relative;
+    top: 150px;
+    /*添加背景看区域*/
+    /*background: #eee;   */
+}
+.wrapper h4 {
+    /*background: green;*/
+    width: 480px;
+    text-align: center;
+    border: 2px solid #eee;
+    box-shadow: 1px 1px 1px 2px red;
+    padding: 10px;
+}
+.wrapper h4:hover {
+    background: #ccc;
+    -webkit-border-radius: 14px;
+    transition: all 1s;
+    cursor: pointer;
+}
+ul li {
+    width: 60px;
+    height: 360px;
+    float: left;
+    position: relative;
+    margin-right: 2px;
+    background-color: green;
+}
+div.key {
+    position: absolute;
+    float: left;
+    /*padding*/
+    /*padding: 0 2px;*/
+    background-color: red;
+    top: 40px;
+    text-align: center;
+    font-size: 16px;
+    background-position: bottom left;
+    background-repeat: repeat-x;    
+}
+.key:hover {
+    background-color: #cacbd1;
+    cursor: pointer;
+}
+div.whiteKey {
+    width: 60px;
+    height: 360px;
+    color: #666;
+    background-color: #eee;
+    border: 2px solid #999;
+    background-image: url(../images/key_back_white.png);
+}
+div.blackKey {
+    width: 36px;
+    height: 200px;
+    color: #ccc;
+    margin-left: 40px;
+    z-index: 999;
+    background-color: #666;
+    border: 2px solid #666;
+    background-image: url(../images/key_back_black.png);
+}

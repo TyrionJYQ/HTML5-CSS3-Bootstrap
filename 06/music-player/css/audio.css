@@ -1,0 +1,189 @@
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	min-height: 100%;
+	background: #EEE;
+	font-family: "Roboto Condensed",sans-serif;
+	font-weight: bold;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	color: #26C5CB;
+}
+p {
+	margin: 0;
+}
+#container,
+#player,
+.cover {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#container {
+	  width: 320px;
+	  height: 320px;
+	  /*overflow: scroll;*/
+}
+#player {
+	width: 300px;
+	height: 300px;
+	/*background-color: red;*/
+	background: #fff;
+	-webkit-border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 2px 2px 20px 0 rgba(0,0,0,0.3);
+	z-index: 300;
+}
+/*专辑封面*/
+img {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.75;
+}
+/*播放按钮*/
+.controls {
+	position: relative;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+button {
+	margin: 5px;
+	color: #fff;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	text-align: center;
+	text-shadow: 1px 1px 2px #000;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+button:hover {
+	color: #26C5CB;
+}
+
+/*歌词面板*/
+.info {
+	position: relative;
+	margin-top: 28px;
+	bottom: 10px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 1px 1px 3px #000;
+}
+.song {
+	font-size: 18px;
+}
+.author {
+	font-size: 14px;
+	margin-bottom: -8px;
+}
+/*以下三个属性写在一起表示元素超出内容宽度后显示为...*/
+.song, .author {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*音量控件样式*/
+input[type="range"] {
+	display: block;
+	margin: 14px auto;
+	width: 80px;
+	height: 2px;
+	outline: 0;
+	cursor: pointer;
+	box-shadow: 1px 1px 3px 0 #000;
+}
+/*-webkit-slider-thumb改变range样式*/
+input[type="range"]::-webkit-slider-thumb {
+	background: #AEAEAE;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	transition: all linear 0.1s;
+	-webkit-appearance: none !important;
+}
+input[type="range"]:hover::-webkit-slider-thumb {
+	background: #26C5CB;
+	-webkit-transform: scale(2);
+}
+/*隐藏复选框*/
+input[type="checkbox"] {
+	position: absolute;
+	top: -9999px;
+	left:-8999px;
+}
+label {
+	text-shadow: 1px 1px 3px #000;
+}
+.to-lyrics-label:hover {
+	color: #26C5CB;
+}
+label.to-lyrics-label {
+	position: absolute;
+	top: 276px;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	margin-left: -5px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+}
+/*lyrics*/
+.lyrics {
+	position: relative;
+	width: 100%;
+	height: 96px;
+	margin-top: 30px;
+	padding: 4px 24px;
+	color: #000;
+	background: rgba(255,255,255,0.3);
+	font-size: 12px;
+	text-align: center;
+	overflow-y: scroll;
+	box-shadow: inset 0 -3px 5px 0 rgba(0,0,0,0.5);
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+
+}
+.lyrics:hover {
+	background: rgba(255,255,255,0.8);
+}
+.lyrics::-webkit-scrollbar {
+	display: none;
+}
+.scroll {
+	color: #fff;
+	text-align: center;
+	font-size: bold;
+	text-shadow: 1px 1px 3px #000;
+}
+.cover {
+	padding-top: 145px;
+	transition: all 0.5s ease-in-out;
+
+}
+/*用于选取属性值中包含指定词汇的元素*/
+#to-lyrics:checked ~ .cover {
+	padding-top: 40px;
+	
+}
+#to-lyrics:checked ~ .cover .lyrics {
+	margin-top: 0px;
+}
+#to-lyrics:checked ~ .cover button {
+	margin: 4px;
+}
+
